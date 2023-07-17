@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos em Tecnologia</title>
+</head>
+<body>
+   <h1 id="inicio">Introdução ao HTML</h1>
+   <hr/>
+   <h2>Índice</h2>
+   <ul>
+        <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+        <li><a href="#tags">O que são as TAGS</a></li>
+        <li><a href="#texto">Fundamentos do texto em HTML</a></li>
+        <li><a href="#listas">Listas no HTML</a></li>
+        <li><a href="#links">Links no HTML</a></li>
+        <li><a href="#referencias">Referências</a></li>
+   </ul>
+   </ul>
+   <h2 id="estrutura">Estrutura básica do HTML</h2>
+   <ul>
+        <li>Significa Hyper Text Markup Language</li>
+        <li>É uma linguagem de marcação padrão para criar páginas da Web</li>
+        <li>Ele descreve a estrutura de uma página da Web</li>
+        <li>Consiste em uma série de elementos</li>
+        <li>Os elementos HTML informam ao navegador como exibir o conteúdo</li>
+  </ul>
+     <p>HTML é usada para a publicação de conteúdo (texto, imagens, vídeos, áudio etc.) na web, baseado no conceito de hipertexto, que são conjuntos de elementos ligados por conexões.</p>
+     <p><strong>Modelo de estrutura.</strong></p>
+    <img src="img/modelo.png" alt="Foto de uma estrutura HTML">
+     <p><strong>!DOCTYPE HTML</strong> - Instrução que indica ao navegador  qual a versão de marcação o código foi escrito.</p>
+     <p><strong>html lang=”pt-br”</strong> - Elemento HTML. O atributo “lang” é necessário para que saibam qual é a linguagem principal do documento.</p>
+     <p><strong>heade </strong>- Local onde fica a “parte inteligente” do web site. No HEAD, ficam as informações sobre a página e sobre o conteúdo.</p>
+     <p><strong>meta charset=”UTF-8”</strong> - Tabela que comporta um milhão de caracteres e a maioria dos browsers a suporta plenamente, ela pode acessar qualquer conteúdo disponível na web.</p>
+     <p><strong>title</strong> - Título que aparece no navegador ou na guia da página</p>
+     <p><strong>body</strong> - Corpo do documento e é um recipiente para todos os conteúdos visíveis, como cabeçalhos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.</p>
+    
+    <h2 id="tags">O que são as TAGS</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+     <p>As tags são formadas por uma estrutura própria, iniciam com o sinal “menor que” (<) em seguida vem o nome daquele elemento e por fim, o sinal “maior que iniciando com uma barra” (/ >).</p>
+     <p><strong>Exemplo:</strong>< tagnome > Conteúdo < /tagnome >. 
+     <p>Tags semânticas - São tags que possuem um significado, que dão sentido a informação de texto ao navegador, ajudar a entender o código.</p>
+
+   <h2>Atributos das tags</h2>
+    <p>são palavras especiais usadas dentro da tag de abertura para controlar o comportamento do elemento.</p>
+    <p>Há dois tipos de atributos no HTML:  os globais que são aceitos por todas as tags, como por exemplo: class, id, e os específicos que somente algumas tags possuem, como src,  href,  etc…</p>
+    <p><strong>Exemplo:</strong><br>
+    <strong>id=” ”</strong> -É utilizado para identificar destino de âncoras<br>
+    <strong>src=” ”</strong> - Link ou diretório da mídia" utilizado para indicar para a tag qual arquivo ou mídia utilizar. Recebe valores como links ou o nome de um arquivo já presente no projeto.<br>
+    <strong>target=”blank”</strong> - Esse atributo abre o link do documento em uma nova janela ou aba.<br>
+    <strong>href=”Url”</strong> - Para a tag <a>, o atributo href especifica a URL da página para a qual o link vai.</p>     
+
+   <h2 id="texto">Fundamentos do texto em HTML</h2>
+   <small><a href="#inicio">(Voltar)</a></small>
+    <p>Um dos principais objetivos do HTML é dar estrutura de texto e significado, também conhecido como semântica. (se refere ao significado de um trecho de código).</p>
+    <p> Um texto estruturado é composto por títulos e parágrafos.</p>
+    <p>Existem seis elementos de título <strong>h1, h2, h3, h4, h5 e h6</strong>. Cada elemento representa um nível diferente de conteúdo no documento; < h1 > representa o título principal, < h2 > representa subtítulos, < h3 > representa sub-subtítulos, e assim por diante e cada parágrafo deve ser envolvido em um elemento <  p >.</p>
+
+   <h2 id="listas">Listas</h2>
+   <small><a href="#inicio">(Voltar)</a></small>
+   <p>Para exibir uma listagem em uma páginas. O HTML tem algumas tags definidas.</p>
+   
+   <h3>Ordenada</h3>
+    <p>Listas ordenadas são listas em que a ordem dos itens é importante.</p>
+    <p>A estrutura de marcação das listas ordenadas deve conter  itens  em um elemento < ol> e envolvido em uma < li> <mark>(list item)</mark></p> 
+
+   <h3>Não ordenada</h3>
+    <p>As listas não ordenadas são usadas para marcar itens as quais a ordem não importa. Toda lista desordenada começa com um < ul> isso envolve todos os itens e cada item da lista é envolvido em uma < li> <mark>(list item)</mark>.</p>
+    
+   <h2 id="links">Links no HTML</h2>
+   <small><a href="#inicio">(Voltar)</a></small>
+    <p>Os links HTML são definidos com a tag < a> é a forma abreviada de "âncora".</p>  
+    <p>A tag <a> define um hiperlink. O href atributo especifica a URL da página para a qual o link vai. <strong>Exemplo:</strong> < a href="https://www.endereço.com"> Este é um link < /a>.</p>
+    <p>Podemos adicionar o atributo target=" " para especificar onde que essa página irá carregar. Por padrão a página irá abrir na mesma aba da página que tem o link, mas se quisermos que a página abra em outra aba podemos colocar o valor _blank dentro desse atributo: < a href="https://www.endereço.com.br" target="_blank">< /a>.</p>
+    <p>As âncoras que começam com [#], você adiciona um href=# onde a hashtag [#] índica que o link está na mesma página e trata-se de um id. O ID não precisa de hashtag, mas de palavra-chave.</p>
+   <h3>Imagens</h3> 
+    <p>As imagens em HTML são definidas com a tag. < img>.</p> 
+    <p>O arquivo de origem ( src= atributo especifica o caminho para a imagem a ser exibida), ( alt= especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida).</p>
+    <p><strong>Exemplo:</strong> < img src="img_gato.jpg" alt="Foto de um animal gato">.</p> 
+
+   <h2 id="referencias">Referências</h2>
+   <small><a href="#inicio">(Voltar)</a></small>
+   <p><em>Fonte:<a href="https://www.w3schools.com/html/html_basic.asp">w3schools</a></em></p>
+   <p><em>Fonte:<a href="https://developer.mozilla.org/pt-BR/">MDN Web Docs</a></em></p>
+    
+</body>
+<footer>
+    <img src="img/assinatura.png" alt="Assinatura pessoal">
+</footer>
+</html>
